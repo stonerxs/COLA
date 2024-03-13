@@ -2,6 +2,7 @@ package com.alibaba.cola.test;
 
 import com.alibaba.cola.test.command.TestClassRunCmd;
 import com.alibaba.cola.test.command.TestMethodRunCmd;
+import jakarta.annotation.Resource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.util.StringUtils;
 
-import javax.annotation.Resource;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

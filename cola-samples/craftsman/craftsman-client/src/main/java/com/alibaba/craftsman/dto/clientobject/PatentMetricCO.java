@@ -1,9 +1,10 @@
 package com.alibaba.craftsman.dto.clientobject;
 
 import com.alibaba.cola.dto.ClientObject;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotEmpty;
 
 /**
  * PatentMetricCO
@@ -12,6 +13,7 @@ import javax.validation.constraints.NotEmpty;
  * @date 2019-03-03 11:16 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class PatentMetricCO  extends AbstractMetricCO {
     public static final String FIRST_AUTHOR_TYPE = "FIRST_AUTHOR";
     public static final String OTHER_AUTHOR_TYPE = "OTHER_AUTHOR";

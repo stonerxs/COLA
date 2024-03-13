@@ -1,9 +1,10 @@
 package com.alibaba.craftsman.dto;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Positive;
 
 /**
  * CodeReviewMetricAddCmd
@@ -12,6 +13,7 @@ import javax.validation.constraints.Positive;
  * @date 2019-03-01 10:09 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class CodeReviewMetricAddCmd extends CommonCommand{
 
     @NotEmpty

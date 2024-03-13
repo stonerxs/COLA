@@ -4,6 +4,7 @@ import com.alibaba.craftsman.domain.metrics.MainMetric;
 import com.alibaba.craftsman.domain.metrics.MainMetricType;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * ContributionMetric
@@ -12,6 +13,7 @@ import lombok.Data;
  * @date 2018-08-27 7:06 PM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class ContributionMetric extends MainMetric {
 
     private CodeReviewMetric codeReviewMetric;

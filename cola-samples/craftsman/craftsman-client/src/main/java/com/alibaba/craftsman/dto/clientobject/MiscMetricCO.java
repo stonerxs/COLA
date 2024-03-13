@@ -1,9 +1,10 @@
 package com.alibaba.craftsman.dto.clientobject;
 
 import com.alibaba.cola.dto.ClientObject;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotEmpty;
 
 /**
  * MiscMetricCO
@@ -12,6 +13,7 @@ import javax.validation.constraints.NotEmpty;
  * @date 2019-03-04 10:58 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class MiscMetricCO extends AbstractMetricCO {
 
     /**

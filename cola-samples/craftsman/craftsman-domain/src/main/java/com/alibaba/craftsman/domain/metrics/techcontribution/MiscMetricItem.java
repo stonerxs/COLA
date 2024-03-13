@@ -4,6 +4,7 @@ import com.alibaba.craftsman.domain.metrics.MetricItem;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,6 +14,7 @@ import java.util.Map;
  * @author xueliang.sxl, alisa.hsh, xiangning.lxn
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class MiscMetricItem extends MetricItem {
 
     /**

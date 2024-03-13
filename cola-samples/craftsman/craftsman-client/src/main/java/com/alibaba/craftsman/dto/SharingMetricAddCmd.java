@@ -1,9 +1,10 @@
 package com.alibaba.craftsman.dto;
 
 import com.alibaba.craftsman.dto.clientobject.SharingMetricCO;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotNull;
 
 /**
  * SharingMetricAddCmd
@@ -12,6 +13,7 @@ import javax.validation.constraints.NotNull;
  * @date 2019-03-01 10:12 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class SharingMetricAddCmd extends CommonCommand{
     @NotNull
     private SharingMetricCO sharingMetricCO;

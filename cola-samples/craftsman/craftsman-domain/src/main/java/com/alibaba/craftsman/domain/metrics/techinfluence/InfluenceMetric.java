@@ -4,6 +4,7 @@ import com.alibaba.craftsman.domain.metrics.MainMetric;
 import com.alibaba.craftsman.domain.metrics.MainMetricType;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * InfluenceMetric
@@ -12,6 +13,7 @@ import lombok.Data;
  * @date 2018-07-04 1:24 PM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class InfluenceMetric extends MainMetric {
     private ATAMetric ataMetric;
     private PatentMetric patentMetric;

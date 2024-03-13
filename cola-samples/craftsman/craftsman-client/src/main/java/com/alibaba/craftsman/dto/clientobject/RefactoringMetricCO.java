@@ -2,6 +2,7 @@ package com.alibaba.craftsman.dto.clientobject;
 
 import com.alibaba.cola.dto.ClientObject;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * RefactoringMetricCO
@@ -10,6 +11,7 @@ import lombok.Data;
  * @date 2019-03-04 10:58 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class RefactoringMetricCO  extends AbstractMetricCO {
 
     public static final String METHOD_LEVEL = "METHOD";

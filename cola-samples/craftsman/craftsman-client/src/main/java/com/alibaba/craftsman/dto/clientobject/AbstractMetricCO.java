@@ -1,9 +1,10 @@
 package com.alibaba.craftsman.dto.clientobject;
 
 import com.alibaba.cola.dto.ClientObject;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotEmpty;
 
 /**
  * AbstractMetricCO
@@ -12,6 +13,7 @@ import javax.validation.constraints.NotEmpty;
  * @date 2019-03-04 11:32 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public abstract class AbstractMetricCO extends ClientObject{
     /**
      * The ownerId of this Metric Item

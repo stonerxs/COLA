@@ -1,11 +1,13 @@
 package com.alibaba.craftsman.dto.clientobject;
 
 import com.alibaba.cola.dto.ClientObject;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotEmpty;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class UserProfileCO extends ClientObject {
 
     public final static String IS_MANAGER = "y";

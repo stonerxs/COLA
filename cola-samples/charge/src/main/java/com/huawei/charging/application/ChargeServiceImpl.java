@@ -12,8 +12,7 @@ import com.huawei.charging.domain.gateway.ChargeGateway;
 import com.huawei.charging.domain.gateway.SessionGateway;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package com.alibaba.craftsman.domain.metrics;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
  * @date 2018-08-28 2:00 PM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public abstract class MainMetric extends Metric{
 
 

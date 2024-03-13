@@ -8,13 +8,13 @@
 package com.alibaba.cola.extension.register;
 
 import com.alibaba.cola.extension.*;
+import jakarta.annotation.Resource;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ObjectUtils;
 
-import javax.annotation.Resource;
 
 /**
  * ExtensionRegister

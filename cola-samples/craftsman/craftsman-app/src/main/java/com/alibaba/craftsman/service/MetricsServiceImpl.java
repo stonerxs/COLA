@@ -8,9 +8,9 @@ import com.alibaba.craftsman.command.*;
 import com.alibaba.craftsman.command.query.ATAMetricQryExe;
 import com.alibaba.craftsman.dto.*;
 import com.alibaba.craftsman.dto.clientobject.ATAMetricCO;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 
 /**
  * MetricsServiceImpl

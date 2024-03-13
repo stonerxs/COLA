@@ -7,13 +7,13 @@ import com.alibaba.cola.extension.test.customer.client.Constants;
 import com.alibaba.cola.extension.test.customer.client.CustomerDTO;
 import com.alibaba.cola.extension.test.customer.client.CustomerServiceI;
 import com.alibaba.cola.extension.test.customer.domain.CustomerType;
+import jakarta.annotation.Resource;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.annotation.Resource;
 
 /**
  * ExtensionTest

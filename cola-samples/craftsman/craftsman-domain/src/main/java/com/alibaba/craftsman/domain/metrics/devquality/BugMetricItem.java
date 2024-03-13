@@ -2,8 +2,10 @@ package com.alibaba.craftsman.domain.metrics.devquality;
 
 import com.alibaba.craftsman.domain.metrics.MetricItem;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class BugMetricItem extends MetricItem{
 
     private int bugCount; //缺陷数量

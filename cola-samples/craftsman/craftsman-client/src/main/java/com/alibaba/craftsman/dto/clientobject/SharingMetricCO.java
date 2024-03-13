@@ -2,6 +2,7 @@ package com.alibaba.craftsman.dto.clientobject;
 
 import com.alibaba.cola.dto.ClientObject;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * SharingMetricCO
@@ -10,6 +11,7 @@ import lombok.Data;
  * @date 2019-03-02 4:55 PM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class SharingMetricCO extends AbstractMetricCO {
 
     public final static String TEAM_SCOPE = "TEAM";

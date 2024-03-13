@@ -4,8 +4,10 @@ import com.alibaba.craftsman.domain.metrics.MainMetric;
 import com.alibaba.craftsman.domain.metrics.MainMetricType;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class DevQualityMetric extends MainMetric {
 
     private BugMetric bugMetric;

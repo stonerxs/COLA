@@ -12,9 +12,9 @@ import com.alibaba.craftsman.command.query.UserProfileGetQryExe;
 import com.alibaba.craftsman.command.query.UserProfileListQryExe;
 import com.alibaba.craftsman.dto.*;
 import com.alibaba.craftsman.dto.clientobject.UserProfileCO;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 
 /**
  * UserProfileServiceImpl

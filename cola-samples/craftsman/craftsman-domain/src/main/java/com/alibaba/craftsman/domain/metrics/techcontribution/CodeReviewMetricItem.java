@@ -3,6 +3,7 @@ package com.alibaba.craftsman.domain.metrics.techcontribution;
 import com.alibaba.craftsman.domain.metrics.MetricItem;
 import com.alibaba.fastjson.JSON;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +13,7 @@ import java.util.Map;
  * @author xueliang.sxl, alisa.hsh, xiangning.lxn
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class CodeReviewMetricItem extends MetricItem {
 
     /**

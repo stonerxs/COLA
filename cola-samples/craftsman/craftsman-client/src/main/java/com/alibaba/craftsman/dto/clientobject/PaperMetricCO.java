@@ -1,8 +1,9 @@
 package com.alibaba.craftsman.dto.clientobject;
 
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.validation.constraints.NotEmpty;
 
 /**
  * PaperMetricCO
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotEmpty;
  * @date 2019-03-03 11:16 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class PaperMetricCO extends AbstractMetricCO{
     @NotEmpty
     private String paperName;

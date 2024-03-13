@@ -4,9 +4,7 @@ import com.huawei.charging.application.ChargeServiceI;
 import com.huawei.charging.application.dto.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.Resource;
-
+import jakarta.annotation.Resource;
 @RestController
 @Slf4j
 public class ChargeController {

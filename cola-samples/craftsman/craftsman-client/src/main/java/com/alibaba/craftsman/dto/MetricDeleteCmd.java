@@ -1,6 +1,7 @@
 package com.alibaba.craftsman.dto;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * MetricDeleteCmd
@@ -9,6 +10,7 @@ import lombok.Data;
  * @date 2019-03-01 10:11 AM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class MetricDeleteCmd extends CommonCommand{
     /**
      * Metric ID

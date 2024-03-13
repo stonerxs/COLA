@@ -2,10 +2,12 @@ package com.alibaba.craftsman.domain.metrics.appquality;
 
 import com.alibaba.craftsman.domain.metrics.MetricItem;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.extern.slf4j.Slf4j;
 
 @Data
 @Slf4j
+@EqualsAndHashCode(callSuper = true)
 public class AppMetricItem extends MetricItem {
 
     private String appName;//应用名称

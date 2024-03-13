@@ -10,13 +10,11 @@ import ${package}.api.CustomerServiceI;
 import ${package}.dto.CustomerAddCmd;
 import ${package}.dto.CustomerListByNameQry;
 import ${package}.dto.data.CustomerDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import ${package}.customer.executor.CustomerAddCmdExe;
 import ${package}.customer.executor.query.CustomerListByNameQryExe;
+import jakarta.annotation.Resource;
 
-import javax.annotation.Resource;
 
 @Service
 @CatchAndLog

@@ -2,6 +2,7 @@ package com.alibaba.craftsman.domain.metrics;
 
 import com.alibaba.craftsman.domain.user.UserProfile;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @date 2018-08-27 6:44 PM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public abstract class SubMetric extends Metric {
 
     protected SubMetricType subMetricType;

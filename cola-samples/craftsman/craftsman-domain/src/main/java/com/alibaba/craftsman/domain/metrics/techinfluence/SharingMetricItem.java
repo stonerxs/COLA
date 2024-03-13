@@ -3,6 +3,7 @@ package com.alibaba.craftsman.domain.metrics.techinfluence;
 import com.alibaba.craftsman.domain.metrics.MetricItem;
 import com.alibaba.fastjson.JSON;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.Date;
 
@@ -13,6 +14,7 @@ import java.util.Date;
  * @date 2018-07-04 3:20 PM
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class SharingMetricItem extends MetricItem {
 
     private String sharingName;

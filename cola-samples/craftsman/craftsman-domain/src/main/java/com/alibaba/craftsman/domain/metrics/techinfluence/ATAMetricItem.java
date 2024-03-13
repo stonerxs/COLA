@@ -3,6 +3,7 @@ package com.alibaba.craftsman.domain.metrics.techinfluence;
 import com.alibaba.craftsman.domain.metrics.MetricItem;
 import com.alibaba.fastjson.JSON;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -13,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Data
 @Slf4j
+@EqualsAndHashCode(callSuper = false)
 public class ATAMetricItem extends MetricItem {
 
     private String authorId;//作者

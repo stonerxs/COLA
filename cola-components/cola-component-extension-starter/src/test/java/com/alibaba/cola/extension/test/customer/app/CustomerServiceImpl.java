@@ -6,9 +6,9 @@ import com.alibaba.cola.extension.test.customer.client.AddCustomerCmd;
 import com.alibaba.cola.extension.test.customer.client.CustomerDTO;
 import com.alibaba.cola.extension.test.customer.client.CustomerServiceI;
 import com.alibaba.cola.extension.test.customer.client.GetOneCustomerQry;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 
 /**
  * CustomerServiceImpl
