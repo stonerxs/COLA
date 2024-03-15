@@ -24,7 +24,7 @@ public class ExtensionExecutor extends AbstractComponentExecutor {
 
     private static final String EXTENSION_NOT_FOUND = "extension_not_found";
 
-    private Logger logger = LoggerFactory.getLogger(ExtensionExecutor.class);
+    private final Logger logger = LoggerFactory.getLogger(ExtensionExecutor.class);
 
     @Resource
     private ExtensionRepository extensionRepository;

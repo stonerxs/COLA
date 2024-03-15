@@ -1,5 +1,7 @@
 package com.alibaba.cola.dto;
 
+import java.io.Serial;
+
 /**
  * Response to caller
  *
@@ -7,6 +9,7 @@ package com.alibaba.cola.dto;
  */
 public class Response extends DTO {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     private boolean success;

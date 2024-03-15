@@ -1,5 +1,8 @@
 package com.alibaba.cola.dto;
 
+import lombok.Setter;
+
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -11,8 +14,10 @@ import java.util.List;
  * <p/>
  * Created by Danny.Lee on 2017/11/1.
  */
+@Setter
 public class MultiResponse<T> extends Response {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     private Collection<T> data;
@@ -27,10 +32,6 @@ public class MultiResponse<T> extends Response {
         return new ArrayList<>(data);
     }
 
-    public void setData(Collection<T> data) {
-        this.data = data;
-    }
-
     public boolean isEmpty() {
         return data == null || data.isEmpty();
     }
@@ -39,14 +40,14 @@ public class MultiResponse<T> extends Response {
         return !isEmpty();
     }
 
-    public static MultiResponse buildSuccess() {
-        MultiResponse response = new MultiResponse();
+    public static MultiResponse<Void> buildSuccess() {
+        MultiResponse<Void> response = new MultiResponse<>();
         response.setSuccess(true);
         return response;
     }
 
-    public static MultiResponse buildFailure(String errCode, String errMessage) {
-        MultiResponse response = new MultiResponse();
+    public static MultiResponse<Void> buildFailure(String errCode, String errMessage) {
+        MultiResponse<Void> response = new MultiResponse<>();
         response.setSuccess(false);
         response.setErrCode(errCode);
         response.setErrMessage(errMessage);

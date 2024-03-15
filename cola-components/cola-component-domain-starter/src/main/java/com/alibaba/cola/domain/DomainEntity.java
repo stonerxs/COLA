@@ -17,5 +17,5 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public @interface Entity {
+public @interface DomainEntity {
 }

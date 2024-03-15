@@ -67,7 +67,7 @@
         </dependency>
 
         <!--
-            support javax annotation @PostConstruct/@PostDestroy when build under java 11+
+            support jakarta annotation @PostConstruct/@PostDestroy when build under java 11+
             more info see https://stackoverflow.com/a/55622713/922688
         -->
         <dependency>

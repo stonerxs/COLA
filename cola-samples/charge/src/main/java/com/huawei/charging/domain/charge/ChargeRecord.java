@@ -2,16 +2,16 @@ package com.huawei.charging.domain.charge;
 
 import com.huawei.charging.domain.charge.chargeplan.ChargePlanType;
 import lombok.Data;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
+import com.alibaba.cola.domain.DomainEntity;
 import java.util.Date;
 
-@Entity
+@DomainEntity
 @Table(name = "charge_record")
 @Data
 public class ChargeRecord {
 
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 

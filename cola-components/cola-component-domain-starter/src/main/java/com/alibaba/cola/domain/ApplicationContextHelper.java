@@ -1,5 +1,7 @@
 package com.alibaba.cola.domain;
 
+import lombok.Getter;
+import lombok.NonNull;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -13,10 +15,11 @@ import org.springframework.stereotype.Component;
  */
 @Component("colaDomainApplicationContextHelper")
 public class ApplicationContextHelper implements ApplicationContextAware {
+    @Getter
     private static ApplicationContext applicationContext;
 
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    public void setApplicationContext(@NonNull ApplicationContext applicationContext) throws BeansException {
         ApplicationContextHelper.applicationContext = applicationContext;
     }
 
@@ -34,9 +37,6 @@ public class ApplicationContextHelper implements ApplicationContextAware {
             simpleName = Character.toLowerCase(simpleName.charAt(0)) + simpleName.substring(1);
             beanInstance = (T)applicationContext.getBean(simpleName);
         }
-        if (beanInstance == null) {
-            throw new RuntimeException("Component " + targetClz + " can not be found in Spring Container");
-        }
         return beanInstance;
     }
 
@@ -52,7 +52,4 @@ public class ApplicationContextHelper implements ApplicationContextAware {
         return ApplicationContextHelper.applicationContext.getBean(requiredType, params);
     }
 
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
-    }
 }

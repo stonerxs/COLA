@@ -3,13 +3,13 @@
 #set( $symbol_escape = '\' )
 package ${package}.domain.customer;
 
-import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.domain.DomainEntity;
 import com.alibaba.cola.exception.BizException;
 import lombok.Data;
 
 //Domain Entity can choose to extends the domain model which is used for DTO
 @Data
-@Entity
+@DomainEntity
 public class Customer{
 
     private String customerId;

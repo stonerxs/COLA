@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AddCustomerCmdExe {
 
-    private Logger logger = LoggerFactory.getLogger(AddCustomerCmd.class);
+    private final Logger logger = LoggerFactory.getLogger(AddCustomerCmd.class);
 
     @Resource
     private ExtensionExecutor extensionExecutor;

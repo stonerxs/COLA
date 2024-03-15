@@ -1,5 +1,9 @@
 package com.alibaba.cola.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serial;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -13,23 +17,19 @@ import java.util.List;
  */
 public class PageResponse<T> extends Response {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
+    @Getter
+    @Setter
     private int totalCount = 0;
 
     private int pageSize = 1;
 
     private int pageIndex = 1;
 
+    @Setter
     private Collection<T> data;
-
-    public int getTotalCount() {
-        return totalCount;
-    }
-
-    public void setTotalCount(int totalCount) {
-        this.totalCount = totalCount;
-    }
 
     public int getPageSize() {
         if (pageSize < 1) {
@@ -71,10 +71,6 @@ public class PageResponse<T> extends Response {
         return new ArrayList<>(data);
     }
 
-    public void setData(Collection<T> data) {
-        this.data = data;
-    }
-
     public int getTotalPages() {
         return this.totalCount % this.pageSize == 0 ? this.totalCount
             / this.pageSize : (this.totalCount / this.pageSize) + 1;
@@ -88,14 +84,14 @@ public class PageResponse<T> extends Response {
         return !isEmpty();
     }
 
-    public static PageResponse buildSuccess() {
-        PageResponse response = new PageResponse();
+    public static PageResponse<Void> buildSuccess() {
+        PageResponse<Void> response = new PageResponse<>();
         response.setSuccess(true);
         return response;
     }
 
-    public static PageResponse buildFailure(String errCode, String errMessage) {
-        PageResponse response = new PageResponse();
+    public static PageResponse<Void> buildFailure(String errCode, String errMessage) {
+        PageResponse<Void> response = new PageResponse<>();
         response.setSuccess(false);
         response.setErrCode(errCode);
         response.setErrMessage(errMessage);

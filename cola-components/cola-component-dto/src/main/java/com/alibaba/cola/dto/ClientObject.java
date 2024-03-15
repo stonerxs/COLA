@@ -1,5 +1,9 @@
 package com.alibaba.cola.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,8 +13,11 @@ import java.util.Map;
  * The clients could be view layer or other HSF Consumers
  * @author fulan.zjf 2017-10-27 PM 12:19:15
  */
-public abstract class ClientObject implements Serializable{
+@Setter
+@Getter
+public abstract class ClientObject implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**
@@ -29,11 +36,4 @@ public abstract class ClientObject implements Serializable{
         this.extValues.put(fieldName, value);
     }
 
-    public Map<String, Object> getExtValues() {
-        return extValues;
-    }
-
-    public void setExtValues(Map<String, Object> extValues) {
-        this.extValues = extValues;
-    }
 }

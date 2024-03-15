@@ -3,11 +3,11 @@
 #set( $symbol_escape = '\' )
 package ${package}.domain.customer;
 
-import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.domain.DomainEntity;
 import lombok.Data;
 
 @Data
-@Entity
+@DomainEntity
 public class Credit{
-    
+
 }

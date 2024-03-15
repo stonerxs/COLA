@@ -12,4 +12,5 @@ import com.alibaba.cola.extension.test.customer.client.AddCustomerCmd;
 public interface AddCustomerValidatorExtPt extends ExtensionPointI {
 
     public void validate(AddCustomerCmd addCustomerCmd);
+
 }

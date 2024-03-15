@@ -1,5 +1,8 @@
 package com.alibaba.cola.extension;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * 扩展点初始化或者查找失败时，使用次异常
  * <p>
@@ -10,6 +13,8 @@ package com.alibaba.cola.extension;
  * @version 1.0.0
  * @since 1.0.0 2022/9/26
  */
+@Setter
+@Getter
 public class ExtensionException extends RuntimeException {
 
     private String errCode;
@@ -29,14 +34,6 @@ public class ExtensionException extends RuntimeException {
 
     public ExtensionException(String errCode, String errMessage, Throwable e) {
         super(errMessage, e);
-        this.errCode = errCode;
-    }
-
-    public String getErrCode() {
-        return errCode;
-    }
-
-    public void setErrCode(String errCode) {
         this.errCode = errCode;
     }
 

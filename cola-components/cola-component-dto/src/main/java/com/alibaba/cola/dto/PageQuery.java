@@ -1,11 +1,14 @@
 package com.alibaba.cola.dto;
 
+import java.io.Serial;
+
 /**
  * Page Query Param
  *
  * @author jacky
  */
 public abstract class PageQuery extends Query {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     public static final String ASC = "ASC";

@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.domain.metrics;
 
-import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.domain.DomainEntity;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.annotation.JSONField;
@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
  * @date 2018-07-04 1:23 PM
  */
 @Data
-@Entity
+@DomainEntity
 @Slf4j
 public abstract class MetricItem implements Measurable{
 

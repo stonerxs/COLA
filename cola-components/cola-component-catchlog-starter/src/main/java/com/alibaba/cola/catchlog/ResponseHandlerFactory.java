@@ -1,6 +1,5 @@
 package com.alibaba.cola.catchlog;
 
-import org.springframework.context.annotation.Bean;
 
 public class ResponseHandlerFactory {
 

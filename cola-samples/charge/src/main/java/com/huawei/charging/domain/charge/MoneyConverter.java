@@ -1,7 +1,7 @@
 package com.huawei.charging.domain.charge;
 
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
+import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
 @Converter(autoApply = true)
 public class MoneyConverter implements AttributeConverter<Money,Long> {

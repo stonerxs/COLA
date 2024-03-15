@@ -21,8 +21,9 @@ public class MetricDeleteCmdExe{
 
     public Response execute(MetricDeleteCmd cmd) {
 
-        metricMapper.delete(cmd.getMetricId(), cmd.getOperater());
+        metricMapper.delete(cmd.getMetricId(), cmd.getOperator());
 
         return Response.buildSuccess();
     }
+
 }

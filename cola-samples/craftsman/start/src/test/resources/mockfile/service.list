@@ -49,7 +49,7 @@ localeCharsetMappingsCustomizer_@_org.springframework.boot.autoconfigure.web.ser
 loggingCodecCustomizer_@_org.springframework.boot.web.codec.CodecCustomizer
 mappingJackson2HttpMessageConverter_@_org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
 mbeanExporter_@_org.springframework.jmx.export.annotation.AnnotationMBeanExporter
-mbeanServer_@_javax.management.MBeanServer
+mbeanServer_@_jakarta.management.MBeanServer
 messageConverters_@_org.springframework.boot.autoconfigure.http.HttpMessageConverters
 metricDeleteCmdExe_@_com.alibaba.craftsman.command.MetricDeleteCmdExe
 metricItemCreatedHandler_@_com.alibaba.craftsman.event.handler.MetricItemCreatedHandler
@@ -58,7 +58,7 @@ metricTunnel_@_com.alibaba.craftsman.tunnel.database.MetricTunnel
 metricsController_@_com.alibaba.craftsman.controller.MetricsController
 metricsServiceImpl_@_com.alibaba.craftsman.service.MetricsServiceImpl
 miscMetricAddCmdExe_@_com.alibaba.craftsman.command.MiscMetricAddCmdExe
-multipartConfigElement_@_javax.servlet.MultipartConfigElement
+multipartConfigElement_@jakarta.servlet.MultipartConfigElement
 multipartResolver_@_org.springframework.web.multipart.support.StandardServletMultipartResolver
 mvcContentNegotiationManager_@_org.springframework.web.accept.ContentNegotiationManager
 mvcConversionService_@_org.springframework.format.support.FormattingConversionService

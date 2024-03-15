@@ -1,6 +1,6 @@
 package com.alibaba.cola.extension.test.customer.domain;
 
-import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.domain.DomainEntity;
 import com.alibaba.cola.extension.BizScenario;
 import com.alibaba.cola.extension.ExtensionExecutor;
 import com.alibaba.cola.extension.test.customer.domain.rule.CustomerRuleExtPt;
@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Frank Zhang
  * @date 2018-01-07 2:38 AM
  */
-@Entity
+@DomainEntity
 @Data
 public class CustomerEntity {
 

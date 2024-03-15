@@ -1,6 +1,5 @@
 package com.alibaba.craftsman.dto.clientobject;
 
-import com.alibaba.cola.dto.ClientObject;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

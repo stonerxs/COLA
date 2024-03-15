@@ -1,7 +1,7 @@
 package com.alibaba.craftsman.domain.metrics;
 
 
-import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.domain.DomainEntity;
 import com.alibaba.craftsman.domain.user.UserProfile;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +12,7 @@ import lombok.Setter;
  * @author Frank Zhang
  * @date 2018-07-04 1:23 PM
  */
-@Entity
+@DomainEntity
 public abstract class Metric implements Measurable{
 
     private double score;

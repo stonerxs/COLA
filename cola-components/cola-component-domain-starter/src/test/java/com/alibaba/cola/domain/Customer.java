@@ -1,6 +1,5 @@
 package com.alibaba.cola.domain;
 
-import com.alibaba.cola.domain.Entity;
 import jakarta.annotation.Resource;
 
 /**
@@ -9,7 +8,7 @@ import jakarta.annotation.Resource;
  * @author Frank Zhang
  * @date 2020-11-14 2:43 PM
  */
-@Entity
+@DomainEntity
 public class Customer {
     private String name;
 

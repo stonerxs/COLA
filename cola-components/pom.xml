@@ -117,6 +117,8 @@
 
     <module>cola-component-ruleengine</module>
 
+    <module>cola-component-orm</module>
+
   </modules>
 
   <properties>

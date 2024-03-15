@@ -1,6 +1,6 @@
 package com.alibaba.craftsman.domain.user;
 
-import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.domain.DomainEntity;
 import com.alibaba.cola.exception.Assert;
 import com.alibaba.craftsman.domain.metrics.appquality.AppQualityMetric;
 import com.alibaba.craftsman.domain.metrics.devquality.DevQualityMetric;
@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Data
 @NoArgsConstructor
-@Entity
+@DomainEntity
 @Slf4j
 public class UserProfile {
 

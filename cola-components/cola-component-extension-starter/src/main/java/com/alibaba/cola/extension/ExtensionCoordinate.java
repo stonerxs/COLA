@@ -7,6 +7,8 @@
  */
 package com.alibaba.cola.extension;
 
+import lombok.Getter;
+
 /**
  * Extension Coordinate(扩展坐标) is used to uniquely position an Extension
  * @author fulan.zjf 2017-11-05
@@ -20,14 +22,11 @@ public class ExtensionCoordinate {
      * Wrapper
      */
     private Class<?> extensionPointClass;
+    @Getter
     private BizScenario bizScenario;
 
     public Class getExtensionPointClass() {
         return extensionPointClass;
-    }
-
-    public BizScenario getBizScenario() {
-        return bizScenario;
     }
 
     public static ExtensionCoordinate valueOf(Class<?> extPtClass, BizScenario bizScenario){
